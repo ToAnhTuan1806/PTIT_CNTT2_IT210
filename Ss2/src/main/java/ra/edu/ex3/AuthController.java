@@ -1,4 +1,4 @@
-package ra.edu.controller;
+package ra.edu.ex3;
 
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;

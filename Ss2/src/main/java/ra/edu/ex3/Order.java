@@ -1,4 +1,4 @@
-package ra.edu.model;
+package ra.edu.ex3;
 
 import java.util.Date;
 

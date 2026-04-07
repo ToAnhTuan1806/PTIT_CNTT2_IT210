@@ -1,4 +1,4 @@
-package ra.edu.controller;
+package ra.edu.ex3;
 
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.http.HttpServletRequest;
@@ -6,7 +6,6 @@ import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import ra.edu.model.Order;
 
 import java.util.ArrayList;
 import java.util.Date;
