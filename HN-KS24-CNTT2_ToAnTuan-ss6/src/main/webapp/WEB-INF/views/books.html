@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:replace="fragments/header :: header(${title})">
+</div>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Ten</th>
+        <th>Tac gia</th>
+        <th>Gia</th>
+        <th>Chi tiet</th>
+
+    </tr>
+    <tr th:each="book : ${books}"
+    th:style="${book.price >= 300000} ? 'background-color: yellow;' : ''">
+        <td th:text="${book.id}"></td>
+        <td th:text="${book.name}"></td>
+        <td th:text="${book.author}"></td>
+        <td th:text="${book.price}"></td>
+        <td><a th:href="@{'/books/' + ${book.id}}">Xem chi tiet</a></td>
+
+    </tr>
+</table>
+<div th:replace="fragment/footer :: footer"></div>
+</body>
+</html>
